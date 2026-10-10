@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SHOR MACHAO — A platform for independent voices, stories, human rights, photography and ideas.">
+  <title>SHOR MACHAO | Raise Your Voice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #101010;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 22px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #333;
+    }
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+    .logo span {
+      color: #ff3030;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin-left: 14px;
+      font-size: 13px;
+    }
+    .hero {
+      padding: 70px 6% 55px;
+      background: linear-gradient(135deg, #251010, #101010 70%);
+    }
+    .tag {
+      color: #ff4545;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+    h1 {
+      font-size: clamp(42px, 10vw, 76px);
+      line-height: 1.05;
+      margin: 20px 0;
+      max-width: 800px;
+    }
+    h1 span {
+      color: #ff3030;
+    }
+    .hero p {
+      color: #ccc;
+      max-width: 550px;
+      margin-bottom: 25px;
+    }
+    .button {
+      display: inline-block;
+      background: #ff3030;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    section {
+      padding: 38px 6%;
+    }
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .section-title span {
+      color: #ff3030;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #1b1b1b;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-content {
+      padding: 18px;
+    }
+    .category {
+      color: #ff4545;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .card h3 {
+      margin: 8px 0;
+    }
+    .card p {
+      color: #bbb;
+      font-size: 14px;
+    }
+    .about {
+      background: #191919;
+    }
+    .about p {
+      color: #ccc;
+      max-width: 700px;
+    }
+    footer {
+      padding: 25px 6%;
+      border-top: 1px solid #333;
+      color: #aaa;
+      font-size: 13px;
+    }
+    @media (max-width: 480px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+      .hero {
+        padding-top: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SHOR <span>MACHAO.</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="tag">INDEPENDENT VOICES · REAL STORIES</div>
+      <h1>Let the world<br>hear your <span>voice.</span></h1>
+      <p>
+        Stories that matter. Ideas that challenge.
+        Voices that deserve to be heard.
+        Welcome to SHOR MACHAO.
+      </p>
+      <a class="button" href="#stories">Explore Stories ↓</a>
+    </section>
+    <section id="stories">
+      <h2 class="section-title">Featured <span>Stories.</span></h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=700&q=80" alt="People working together">
+          <div class="card-content">
+            <div class="category">Ideas & Society</div>
+            <h3>Every Voice Matters</h3>
+            <p>A space for ideas, experiences and conversations that deserve attention.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=700&q=80" alt="City buildings">
+          <div class="card-content">
+            <div class="category">World & People</div>
+            <h3>Understand Our World</h3>
+            <p>Explore communities, social issues and the stories behind the headlines.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Beautiful landscape">
+          <div class="card-content">
+            <div class="category">Photography</div>
+            <h3>Stories Through Pictures</h3>
+            <p>Discover the world through photographs, creativity and personal perspectives.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2 class="section-title">Why <span>SHOR MACHAO?</span></h2>
+      <p>
+        SHOR MACHAO is being built as an independent publishing platform
+        for stories, photographs, videos, opinions and ideas. Our goal
+        is to make meaningful voices easier to discover and share.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 SHOR MACHAO. Built for voices that matter.</p>
+    <p>Think freely. Speak responsibly. Make your voice heard.</p>
+  </footer>
+</body>
+</html>
